@@ -1,4 +1,6 @@
 build
 .idea
 input
+output
 .gradle
+temp.log
