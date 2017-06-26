@@ -12,3 +12,5 @@
     * 1. Open Project structure
     * 2. Add module dependency for try-hadoop module.
     * 3. Remove jar dependency (like a hack.)
+    
+## The flow of LocalRunner.
