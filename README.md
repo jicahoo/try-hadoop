@@ -28,4 +28,4 @@
             * writeConf(conf, submitJobFile); #Write job.xml
             * status = submitClient.submitJob(jobId, submitJobDir.toString(), job.getCredentials());
                * Job job = new Job(JobID.downgrade(jobid), jobSubmitDir); #Job is inner class of LocalJobRunner and also a JavaThread. It will start a thread.
-               
+   * mapreduce.Job.monitorAndPrintJob
