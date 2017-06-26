@@ -17,3 +17,9 @@
 * mapreduce.Job.waitForCompletion
    * Job.submit()
       * Got a JobSubmitter
+      * UserGroupInformation.doAs
+         * jobSubmitter.submitInternal()
+            * Configuration conf = job.getConfiguration()
+            * addMRFrameworkToDistributedCache(conf);
+            * JobID jobId = submitClient.getNewJobID(); #submitClient is a reference to LocalJobRunner
+            * int maps = writeSplits(job, submitJobDir)
