@@ -15,4 +15,5 @@
     
 ## The flow of execution:
 * mapreduce.Job.waitForCompletion
-* 
+   * Job.submit()
+      * JobSubmitter
