@@ -14,6 +14,7 @@
     * 3. Remove jar dependency (like a hack.)
     
 ## The flow of execution:
+### Main Thread:
 * mapreduce.Job.waitForCompletion
    * Job.submit()
       * Got a JobSubmitter
@@ -29,3 +30,11 @@
             * status = submitClient.submitJob(jobId, submitJobDir.toString(), job.getCredentials());
                * Job job = new Job(JobID.downgrade(jobid), jobSubmitDir); #Job is inner class of LocalJobRunner and also a JavaThread. It will start a thread.
    * mapreduce.Job.monitorAndPrintJob
+
+### Map thread:
+LocalJobRunner.Job.MapTaskRunnable.run:
+* TODO
+
+### Reduce thread
+LocalJobRunner.Job.ReduceTaskRunnable
+* TODO
