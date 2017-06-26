@@ -23,3 +23,6 @@
             * addMRFrameworkToDistributedCache(conf);
             * JobID jobId = submitClient.getNewJobID(); #submitClient is a reference to LocalJobRunner
             * int maps = writeSplits(job, submitJobDir)
+               * writeNewSplits
+                  * FileInputFormat.getSplits()
+            * writeConf(conf, submitJobFile); #Write job.xml
